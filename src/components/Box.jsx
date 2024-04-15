@@ -6,7 +6,7 @@ const Box = () => {
       <marquee
         behavior="scroll"
         direction="left"
-        scrollamount="15"
+        scrollamount="10"
         className="pt-2"
       >
         <div className="box">
