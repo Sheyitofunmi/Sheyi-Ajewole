@@ -41,40 +41,6 @@ const Testimonials = () => {
               </p>
             </div>
           </div>
-
-          <div className="container-testimonial flex pt-14 md:flex-row  flex-col justify-center items-center align-middle">
-            <div className="container-person md:pb-0 pb-20">
-              <div className="container-img-profile">
-                <img
-                  src="https://media.licdn.com/dms/image/D4E03AQFB9AWpvhXOnQ/profile-displayphoto-shrink_800_800/0/1694462569508?e=1718841600&v=beta&t=i8ngDmwixTK0oR8AahC7vyYhc6TGf-5CjI_lOp2dpEE"
-                  alt="head-shot "
-                />
-              </div>
-              <p className="text-[1.3rem] pt-2">
-                Eze Sunday, Software Engineer
-              </p>
-            </div>
-            <div className="container-text">
-              <p className="text-[1.3rem] py-3">
-                We hired Sheyi to rework the content and design of our website.
-                She has been terrific-{" "}
-                <span className="text-bold">
-                  collaborative, diligent, honest and professional
-                </span>
-                , offering solutions we had not thought about. We have found
-                that she delivers efficiently and in a timely manner.
-              </p>
-              <p className="text-[1.3rem] py-3">
-                Her work on our website successfully communicates to prospective
-                clients the kind of people and firm that we are, and has brought
-                innumerable clients to our firm through a streamlined and
-                attractive website.{" "}
-                <span className="bold">
-                  I would recommend Sheyi in a heartbeat.
-                </span>
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
