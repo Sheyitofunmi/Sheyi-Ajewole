@@ -53,11 +53,7 @@ const Hero = () => {
       id="home"
       className="hero min-h-screen bg-[#6fdcbf]    relative py-20  flex md:py-10 md:flex-col lg:flex-row flex-col items-center "
     >
-      <div
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-      >
+      <div data-aos="fade-right">
         <div className="flex-1 py-[3%] px-[8%] lg:ml-3 md:py-0 md:px-0 md:pt-10 lg:pt-2 flex items-center justify-center h-full  overflow-hidden max-w-300 mx-auto  ">
           <img
             src={homeImg}
