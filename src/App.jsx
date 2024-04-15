@@ -24,7 +24,7 @@ function App() {
       <div className="side3 bg-[#7689d8] relative"></div>
       <Projects />
       <div className="side4 bg-[#a1eacd] relative"></div>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <div className="side5 bg-[#fef2d8]"></div>
       <Contact />
       <Box />
