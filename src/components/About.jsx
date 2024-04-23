@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutImg, SeyiImg4, downloadCV } from "../utils";
+import { AboutImg, SeyiImg4 } from "../utils";
 
 const About = () => {
   const info = [
@@ -8,9 +8,9 @@ const About = () => {
     { text: "Companies Work", count: "02" },
   ];
 
-  const handleDownloadCV = () => {
-    downloadCV();
-  };
+  // const handleDownloadCV = () => {
+  //   downloadCV();
+  // };
 
   return (
     <section id="about" className="pt-10 pb-12 bg-[#ffeed9] ">
@@ -74,13 +74,23 @@ const About = () => {
               <br />
               <div className="flex gap-5 md:justify-start justify-between">
                 <div>
-                  {" "}
+                  {/* {" "}
                   <button
                     className="px-4 pt-1 border-t-2 lg:text-[24px] md:-[20px] text-[15px] md:tracking-[3px] tracking-[2px]  text border-[#394ff4] text-[#252525] hover:text-white hover:bg-[#394ff4] transition-all duration-200"
-                    onClick={handleDownloadCV}
+                    // onClick={handleDownloadCV}
+                    href="../../public/files/Seyi-best-CV.pdf"
+                    download="Ajewole_Seyi_CV.pdf"
                   >
                     Download CV
-                  </button>
+                  </button> */}
+                  <a
+                    href="../../public/files/Seyi-best-CV.pdf"
+                    download="Ajewole_Seyi_CV.pdf"
+                  >
+                    <button className="px-4 pt-1 border-t-2 lg:text-[24px] md:-[20px] text-[15px] md:tracking-[3px] tracking-[2px]  text border-[#394ff4] text-[#252525] hover:text-white hover:bg-[#394ff4] transition-all duration-200">
+                      Download CV
+                    </button>
+                  </a>
                 </div>
                 <div>
                   {" "}
