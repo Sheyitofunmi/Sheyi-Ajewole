@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import { downloadCV } from "../utils";
+import { downloadCV } from "../utils";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -12,12 +12,7 @@ const Navbar = () => {
     { name: "SKILLS", link: "#skills" },
     { name: "PROJECTS", link: "#projects" },
     { name: "CONTACT", link: "#contact" },
-    // { name: "Download CV", action: downloadCV },
-    {
-      name: "Download CV",
-      link: "../../public/files/Seyi-best-CV.pdf",
-      download: "Ajewole_Seyi_CV.pdf",
-    },
+    { name: "Download CV", action: downloadCV },
   ];
 
   useEffect(() => {
@@ -88,21 +83,15 @@ const Navbar = () => {
                   activeLink === menu.link ? "active" : ""
                 }`}
               >
-                {menu.download ? (
-                  <a href={menu.link} download={menu.download}>
-                    {menu.name}
-                  </a>
-                ) : (
-                  <a
-                    href={menu.link}
-                    onClick={() => {
-                      handleSetActiveLink(menu.link);
-                      if (menu.action) menu.action();
-                    }}
-                  >
-                    {menu.name}
-                  </a>
-                )}
+                <a
+                  href={menu.link}
+                  onClick={() => {
+                    handleSetActiveLink(menu.link);
+                    if (menu.action) menu.action();
+                  }}
+                >
+                  {menu.name}
+                </a>
               </li>
             ))}
           </ul>
@@ -138,39 +127,10 @@ const Navbar = () => {
                   activeLink === menu.link ? "active" : ""
                 }`}
               >
-                {menu.download ? (
-                  <a href={menu.link} download={menu.download}>
-                    {menu.name}
-                  </a>
-                ) : (
-                  <a href={menu.link}>{menu.name}</a>
-                )}
+                <a href={menu.link}>{menu.name}</a>
               </li>
             ))}
           </ul>
-          {/* <ul className="flex items-center gap-1 py-2 text-lg">
-            {menuLinks?.map((menu, i) => (
-              <li
-                key={i}
-                className={`px-6 list-text font-bold ${
-                  activeLink === menu.link ? "active" : ""
-                }`}
-              >
-                {menu.download ? (
-                  <a href={menu.link} download={menu.download}>
-                    {menu.name}
-                  </a>
-                ) : (
-                  <a
-                    href={menu.link}
-                    onClick={() => handleSetActiveLink(menu.link)}
-                  >
-                    {menu.name}
-                  </a>
-                )}
-              </li>
-            ))}
-          </ul> */}
         </div>
       </div>
     </nav>
