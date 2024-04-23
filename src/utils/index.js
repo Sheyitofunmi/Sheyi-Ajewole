@@ -51,10 +51,38 @@ export const WizzImg = Wizz;
 
 
 
-export const downloadCV = () => {
-    const cvLink = 'https://flowcv.com/resume/uw2p8logp7';
-    const anchor = document.createElement('a');
-    anchor.href = cvLink;
-    anchor.setAttribute('download', 'Ajewole_Seyi_CV.pdf');
-    anchor.click();
-  };
+// export const downloadCV = () => {
+//     const cvLink = 'https://flowcv.com/resume/uw2p8logp7';
+//     const anchor = document.createElement('a');
+//     anchor.href = cvLink;
+//     anchor.setAttribute('download', 'Ajewole_Seyi_CV.pdf');
+//     anchor.click();
+//   };
+
+
+  export const downloadCV = () => {
+  
+    const pdfPath = "../../public/files/Seyi-best-CV.pdf";
+
+    // Fetch the PDF file
+    fetch(pdfPath)
+      .then(response => response.blob())
+      .then(blob => {
+       
+        const url = window.URL.createObjectURL(new Blob([blob]));
+
+      
+        const anchor = document.createElement('a');
+        anchor.href = url;
+        anchor.setAttribute('download', 'Ajewole_Seyi_CV.pdf');
+
+       
+        document.body.appendChild(anchor);
+        anchor.click();
+
+      
+        document.body.removeChild(anchor);
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(error => console.error("Error fetching PDF:", error));
+};
