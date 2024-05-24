@@ -5,7 +5,7 @@ const About = () => {
   const info = [
     { text: "Years experience", count: "03" },
     { text: "Completed Projects", count: "24" },
-    { text: "Companies Work", count: "02" },
+    { text: "Companies Work", count: "03" },
   ];
 
   const handleDownloadCV = () => {

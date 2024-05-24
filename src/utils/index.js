@@ -53,6 +53,7 @@ export const WizzImg = Wizz;
 
 export const downloadCV = () => {
     const cvLink = 'https://flowcv.com/resume/uw2p8logp7';
+    // const cvLink =" https://app.enhancv.com/share/99f6dd49/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
     const anchor = document.createElement('a');
     anchor.href = cvLink;
     anchor.setAttribute('download', 'Ajewole_Seyi_CV.pdf');
