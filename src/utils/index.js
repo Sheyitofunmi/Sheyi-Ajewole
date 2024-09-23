@@ -51,11 +51,21 @@ export const WizzImg = Wizz;
 
 
 
+// export const downloadCV = () => {
+//     const cvLink = 'https://docs.google.com/document/d/1mPt8SLjnWJLqJfP608SXunlzr2drwDCuw28v5aebok4/edit?usp=sharing';
+//     // const cvLink =" https://app.enhancv.com/share/99f6dd49/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
+//     const anchor = document.createElement('a');
+//     anchor.href = cvLink;
+//     anchor.setAttribute('download', 'Ajewole_Seyi_CV.pdf');
+//     anchor.click();
+//   };
+
 export const downloadCV = () => {
-    const cvLink = 'https://flowcv.com/resume/uw2p8logp7';
-    // const cvLink =" https://app.enhancv.com/share/99f6dd49/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
-    const anchor = document.createElement('a');
-    anchor.href = cvLink;
-    anchor.setAttribute('download', 'Ajewole_Seyi_CV.pdf');
-    anchor.click();
-  };
+  const cvPath = '/assets/cv/Ajewole_Seyi_Resume.pdf';
+  const anchor = document.createElement('a');
+  anchor.href = cvPath;
+  anchor.setAttribute('download', 'Ajewole_Seyi_CV.pdf');
+  document.body.appendChild(anchor); // Append to the body to ensure it's clickable
+  anchor.click();
+  document.body.removeChild(anchor); // Remove it after clicking
+};

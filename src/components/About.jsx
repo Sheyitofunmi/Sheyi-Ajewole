@@ -3,9 +3,9 @@ import { AboutImg, SeyiImg4, downloadCV } from "../utils";
 
 const About = () => {
   const info = [
-    { text: "Years experience", count: "03" },
-    { text: "Completed Projects", count: "24" },
-    { text: "Companies Work", count: "03" },
+    { text: "Years experience", count: "04" },
+    { text: "Completed Projects", count: "26" },
+    { text: "Companies Work", count: "04" },
   ];
 
   const handleDownloadCV = () => {
@@ -32,8 +32,8 @@ const About = () => {
               </div>
 
               <h3 className="pb-2 font-[500] text-3xl ">
-                I'm a Front-end Developer with over 3 years of experience with
-                design chops.
+                I'm a Front-end Developer with years of experience with design
+                chops.
               </h3>
               <p className="text-[1.3rem] py-3">
                 I'm passionate about bringing both the
